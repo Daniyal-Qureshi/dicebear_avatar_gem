@@ -1,8 +1,7 @@
 # DicebearAvatar
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dicebear_avatar`. To experiment with that code, run `bin/console` for an interactive prompt.
+DicebearAvatar is a Ruby gem that provides a simple interface to create avatars using the [Dicebear API](https://www.dicebear.com/). With DicebearAvatar, you can easily generate avatars with various customization options, including clothing, accessories, and more. This gem aims to simplify the process of creating unique avatars for your applications.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -21,18 +20,42 @@ Or install it yourself as:
     $ gem install dicebear_avatar
 
 ## Usage
+Here's a quick guide on how to use DicebearAvatar:
 
-TODO: Write usage instructions here
+## Generate an Avatar: 
+You can generate avatars with custom styles, API versions, and more by using the generate_avatar method. Provide the style name, API version, file name, and file format along with optional customization options.
+``` ruby
+DicebearAvatar.generate_avatar(
+  api_version: '7.x',
+  style_name: 'adventurer',
+  file_format: 'jpg',
+  filename: 'avatar',
+  options: { seed: 'Alice' }
+)
+```
+## Customization Options:
+You can customize avatars by passing additional options like seed, rotate, scale, backgroundColor, and many more. Check the full list of options in the [Dicebear API Customization](https://www.dicebear.com/how-to-use/http-api/)
 
-## Development
+## Sample Options Display: 
+To see the available customization options, use the sample_options method to print a colorful list of key-value pairs in your terminal.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```ruby
+DicebearAvatar.sample_options
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Contributions and Open Invitation:
 
-## Contributing
+The DicebearAvatar gem was initiated by Daniyal Qureshi. I warmly welcome contributions from the open-source community to further improve and expand this project. Feel free to reach out to Daniyal Qureshi at daniyalqureshi.cs@gmail.com with your ideas, questions, and suggestions.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dicebear_avatar. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+**Getting Started with Contributions:**
+
+You can begin contributing to the project by following these steps:
+
+1. **Create Issues:** Start by creating issues that address bugs, propose enhancements, or discuss new features. This provides a structured way to share your ideas and collaborate on improvements.
+
+2. **Submit Pull Requests:** Once you've identified an issue or have a contribution in mind, you can submit a pull request to implement the changes. Our collaborative environment ensures that your contributions are reviewed and integrated effectively.
+
+By following these steps, you can actively participate in the growth of the NamedayApi gem. We value your input and look forward to working together to make this project even better.
 
 ## License
 
@@ -40,4 +63,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the DicebearAvatar project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/dicebear_avatar/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the DicebearAvatar project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Daniyal-Qureshi/dicebear_avatar_gem/blob/master/CODE_OF_CONDUCT.md).
