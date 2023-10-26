@@ -1,0 +1,26 @@
+PATH
+  remote: .
+  specs:
+    dicebear_avatar (0.1.0)
+      httparty (~> 0.18.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    httparty (0.18.1)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
+    mime-types (3.5.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2023.1003)
+    multi_xml (0.6.0)
+
+PLATFORMS
+  x86_64-darwin-21
+
+DEPENDENCIES
+  dicebear_avatar!
+  httparty
+
+BUNDLED WITH
+   2.4.21
