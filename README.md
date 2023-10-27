@@ -55,7 +55,7 @@ You can begin contributing to the project by following these steps:
 
 2. **Submit Pull Requests:** Once you've identified an issue or have a contribution in mind, you can submit a pull request to implement the changes. Our collaborative environment ensures that your contributions are reviewed and integrated effectively.
 
-By following these steps, you can actively participate in the growth of the NamedayApi gem. We value your input and look forward to working together to make this project even better.
+By following these steps, you can actively participate in the growth of the DicebearAvatar gem. We value your input and look forward to working together to make this project even better.
 
 ## License
 
